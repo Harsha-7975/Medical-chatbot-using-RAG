@@ -31,6 +31,8 @@ prompt = PromptTemplate(
 
 #function for retreiver:
 def format_docs(retreived_docs):
+    #the above print statement is just to see what files have been retreived
+    print(retreived_docs)
     context_text = "\n\n".join(doc.page_content for doc in retreived_docs)
     return context_text
 
@@ -44,4 +46,5 @@ parallel_chain = RunnableParallel({
 parser = StrOutputParser()
 final_chain = RunnableSequence(parallel_chain,prompt,llm,parser)
 
-print(final_chain.invoke("What is an LLM and machine learning?"))
+
+print(final_chain.invoke("explain various types of diabetes"))

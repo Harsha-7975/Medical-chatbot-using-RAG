@@ -1,0 +1,27 @@
+langchain
+langchain-core
+langchain-community
+langchain-docling
+
+# OpenAI Integration
+langchain-openai
+openai
+
+# Anthropic Integration
+langchain-anthropic
+
+# Google Gemini (PaLM) Integration
+langchain-google-genai
+google-generativeai
+
+
+# Environment Variable Management
+python-dotenv
+
+#webpage
+streamlit
+
+
+faiss-gpu
+sentence-transformers 
+torch
